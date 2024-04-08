@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Button = () => {
+interface Props{
+  text: string;
+}
+
+const Button = ({text}: Props) => {
   return (
-    <div className='bg-blue-100 text-white px-6 py-5'>Button</div>
+    <div className='bg-blue-100 text-white px-6 py-5'>{text}</div>
   )
 }
 
